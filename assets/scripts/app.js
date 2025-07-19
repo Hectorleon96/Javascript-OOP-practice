@@ -3,27 +3,29 @@ class Product {
   imageUrl;
   description;
   price;
-}
 
-console.log(new Product());
+  constructor(title, image, desc, price) {
+    this.title = title;
+    this.imageUrl = image;
+    this.description = desc;
+    this.price = price;
+  }
+}
 
 const productList = {
   products: [
-    //new Product()
-    {
-      title: "A Pillow",
-      imageUrl:
-        "https://www.ikea.com/mx/en/images/products/skogsfraeken-pillow-low__0970237_ph172412_s5.jpg?f=s",
-      price: 19.99,
-      description: "A soft pillow",
-    },
-    {
-      title: "A Carpet",
-      imageUrl:
-        "https://carpetcentre.com/cdn/shop/files/AR109398copy.webp?v=1752214521",
-      price: 89.99,
-      description: "A carpet which you might like - or not.",
-    },
+    new Product(
+      "A Pillow",
+      "https://www.ikea.com/mx/en/images/products/skogsfraeken-pillow-low__0970237_ph172412_s5.jpg?f=s",
+      "A soft pillow",
+      19.99
+    ),
+    new Product(
+      "A Carpet",
+      "https://carpetcentre.com/cdn/shop/files/AR109398copy.webp?v=1752214521",
+      "A soft pillow",
+      19.99
+    ),
   ],
 
   render() {
