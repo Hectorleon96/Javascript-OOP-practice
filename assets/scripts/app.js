@@ -21,7 +21,7 @@ class ProductItem {
           <div class="product-item__content">
               <h2>${this.product.title}</h2>
               <h3>\$${this.product.price}</h3>
-              <p>${this.product.description}<p/>
+              <p>${this.product.description}</p>
               <button>Add to Cart</button>
           </div>
       </div>
